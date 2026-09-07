@@ -7,7 +7,6 @@
 [![Linux](https://img.shields.io/badge/Linux-Ubuntu-orange?logo=linux)](https://ubuntu.com/)
 [![Bash](https://img.shields.io/badge/Script-Bash-green?logo=gnu-bash)](https://www.gnu.org/software/bash/)
 [![Nmap](https://img.shields.io/badge/Scanner-Nmap-blue)](https://nmap.org/)
-[![Git](https://img.shields.io/badge/Version%20Control-Git-F05032?logo=git)](https://git-scm.com/)
 [![GitHub](https://img.shields.io/badge/Repository-GitHub-black?logo=github)](https://github.com/)
 
 
