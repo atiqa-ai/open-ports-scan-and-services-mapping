@@ -480,20 +480,15 @@ Contains the collected raw Nmap scan results.
 
 # 🖼️ Screenshots
 
-Screenshots provide visual evidence of the project execution and results.
-
-Store screenshots inside:
-
-```text
-screenshots/
-```
 
 ### Nmap Installation
 
   <img width="435" height="311" alt="Screenshot 2026-09-05 203159" src="https://github.com/user-attachments/assets/5266c255-da20-4e94-8538-5fc1679fa0fa" />
 
 
+
 ### Nmap Scan Execution
+
 
 <img width="443" height="340" alt="Screenshot 2026-09-07 223149" src="https://github.com/user-attachments/assets/066d1eaf-08cb-43f7-8283-caad33a04982" />
 
@@ -501,7 +496,9 @@ screenshots/
 
 ### Scan Results
 
+
 <img width="442" height="341" alt="Screenshot 2026-09-07 222917" src="https://github.com/user-attachments/assets/387387ef-4294-488a-bac4-07c4de8030a9" />
+
 
 <img width="443" height="259" alt="image" src="https://github.com/user-attachments/assets/e4a4a9e4-78a0-450b-90dc-551bf8f8040b" />
 
