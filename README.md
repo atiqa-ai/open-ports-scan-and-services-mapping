@@ -490,21 +490,19 @@ screenshots/
 
 ### Nmap Installation
 
-```markdown
-![Nmap Installation on Ubuntu](screenshots/nmap-installation.png)
-```
+  <img width="435" height="311" alt="Screenshot 2026-09-05 203159" src="https://github.com/user-attachments/assets/5266c255-da20-4e94-8538-5fc1679fa0fa" />
+
 
 ### Nmap Scan Execution
 
-```markdown
-![Nmap Scan Execution](screenshots/nmap-scan.png)
-```
+<img width="443" height="340" alt="Screenshot 2026-09-07 223149" src="https://github.com/user-attachments/assets/066d1eaf-08cb-43f7-8283-caad33a04982" />
+
+
 
 ### Scan Results
 
-```markdown
-![Nmap Scan Results](screenshots/nmap-results.png)
-```
+<img width="442" height="341" alt="Screenshot 2026-09-07 222917" src="https://github.com/user-attachments/assets/387387ef-4294-488a-bac4-07c4de8030a9" />
+
 
 
 
