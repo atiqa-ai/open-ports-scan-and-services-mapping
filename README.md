@@ -60,9 +60,7 @@ The main objectives of this project are:
 
 The project follows a simple automated network reconnaissance architecture:
 
-<div align="center">
-
-```text
+<pre align="center">
                          ┌──────────────────────┐
                          │  Authorized Targets  │
                          │      targets.txt     │
@@ -99,63 +97,8 @@ The project follows a simple automated network reconnaissance architecture:
                 │   Raw Nmap Data  │   │  Project Reports │
                 │ .nmap/.gnmap/XML │   │     reports/     │
                 └──────────────────┘   └──────────────────┘
-```
+</pre>
 
----
-
-# 🔄 Project Workflow
-
-The complete scanning workflow is:
-
-<div align="center">
-
-```text
-             ┌──────────────────────────┐
-│ 1. Load Target IPs       │
-│    from targets.txt      │
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│ 2. Validate Target IP    │
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│ 3. Perform Full TCP Scan │
-│       Nmap -Pn -p-       │
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│ 4. Identify Open Ports   │
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│ 5. Extract Open Ports    │
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│ 6. Service & Version     │
-│    Detection using -sV   │
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│ 7. Save Raw Nmap Output  │
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│ 8. Analyze Scan Results  │
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│ 9. Generate Final Report │
-└──────────────────────────┘
 
 ---
 
