@@ -103,6 +103,8 @@ The project follows a simple automated network reconnaissance architecture:
 
 # 🔄 Project Workflow
 
+<div align="center">
+
 The complete scanning workflow is:
 
 ```text
@@ -144,9 +146,7 @@ The complete scanning workflow is:
 ┌──────────────────────────┐
 │ 9. Generate Final Report │
 └──────────────────────────┘
-```
 
----
 
 # 🛠️ Technologies & Tools
 
@@ -385,6 +385,8 @@ scans/
 
 The project successfully scanned:
 
+<div align="center">
+
 > **15 authorized IP addresses**
 
 ### Scan Configuration
@@ -400,6 +402,8 @@ The project successfully scanned:
 | Scanner           | Nmap                      |
 | Output Formats    | `.nmap`, `.gnmap`, `.xml` |
 | Project Status    | ✅ Completed               |
+
+</div>
 
 ### Overall Findings
 
@@ -475,11 +479,6 @@ Contains the collected raw Nmap scan results.
 
 ---
 
-# 🖼️ Screenshots
-
-Screenshots provide visual evidence of the project execution and results.
-
-Store screenshots inside:
 
 ```text
 screenshots/
@@ -487,21 +486,21 @@ screenshots/
 
 ### Nmap Installation
 
-<img width="435" height="311" alt="Screenshot 2026-09-05 203159" src="https://github.com/user-attachments/assets/fd873392-5b4e-4936-9b15-077f66c28d8b" />
+(<img width="435" height="311" alt="Screenshot 2026-09-05 203159" src="https://github.com/user-attachments/assets/fd873392-5b4e-4936-9b15-077f66c28d8b" />)
 
 
 
 ### Nmap Scan Execution
 
 
-<img width="443" height="340" alt="image" src="https://github.com/user-attachments/assets/7690f030-e1d0-4ddf-8a14-ffbb7ff040bd" />
+(<img width="443" height="340" alt="image" src="https://github.com/user-attachments/assets/7690f030-e1d0-4ddf-8a14-ffbb7ff040bd" />)
 
 
 
 ### Scan Results
 
 
-<img width="442" height="341" alt="image" src="https://github.com/user-attachments/assets/ab72b98e-a0de-48ab-952b-86686cbea069" />
+(<img width="442" height="341" alt="image" src="https://github.com/user-attachments/assets/ab72b98e-a0de-48ab-952b-86686cbea069" />)
 
 
 
@@ -545,8 +544,6 @@ This project provided practical experience in:
 * Service discovery
 * Nmap
 * Bash scripting
-* Linux networking
-* Automation
 * Network exposure analysis
 * Raw scan result processing
 * Security documentation
@@ -573,28 +570,7 @@ This project provided practical experience in:
 
 ---
 
-# 👨‍💻 Project Information
-
-| Information          | Details                                   |
-| -------------------- | ----------------------------------------- |
-| **Project Name**     | Open Port Scan and Service Mapping        |
-| **Category**         | Network Security / Network Reconnaissance |
-| **Primary Tool**     | Nmap                                      |
-| **Automation**       | Bash                                      |
-| **Operating System** | Ubuntu / Linux                            |
-| **Targets**          | 15 Authorized IP Addresses                |
-| **Repository**       | GitHub                                    |
-| **Status**           | Completed                                 |
-
----
 
 
-
-
-<p align="center">
-
-**Built for Network Visibility, Service Discovery & Authorized Security Testing**
-
-</p>
 
 
