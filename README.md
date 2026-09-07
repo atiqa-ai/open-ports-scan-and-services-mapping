@@ -39,28 +39,7 @@ All scan outputs are stored as raw Nmap evidence for analysis, verification, and
 
 ---
 
-## 📚 Table of Contents
 
-* [Overview](#-overview)
-* [Objectives](#-objectives)
-* [Architecture](#-architecture)
-* [Workflow](#-workflow)
-* [Technologies](#️-technologies)
-* [Project Structure](#-project-structure)
-* [Scanning Methodology](#-scanning-methodology)
-* [Results](#-results)
-* [Screenshots](#-screenshots)
-* [Installation](#-installation)
-* [Usage](#-usage)
-* [Output Files](#-output-files)
-* [Security & Authorization](#-security--authorization)
-* [Limitations](#️-limitations)
-* [Future Improvements](#-future-improvements)
-* [Learning Outcomes](#-learning-outcomes)
-* [Project Status](#-project-status)
-* [Disclaimer](#-disclaimer)
-
----
 
 # 🏗️ Architecture
 
@@ -105,6 +84,117 @@ The project follows a simple automated reconnaissance architecture:
      │ .nmap/.gnmap/XML │                       │   reports/       │
      └──────────────────┘                       └──────────────────┘
 ```
+
+
+# 🚀 Installation
+
+## Prerequisites
+
+The project requires:
+
+* Ubuntu/Linux
+* Bash
+* Nmap
+* Git
+
+### Install Nmap
+
+```bash
+sudo apt update
+sudo apt install nmap -y
+```
+
+### Verify installation
+
+```bash
+nmap --version
+```
+
+### Verify Bash
+
+```bash
+bash --version
+```
+
+---
+
+# ▶️ Usage
+
+## 1. Clone the repository
+
+```bash
+git clone <YOUR-GITHUB-REPOSITORY-URL>
+```
+
+## 2. Enter the project
+
+```bash
+cd open-port-scan
+```
+
+## 3. Make the script executable
+
+```bash
+chmod +x scan_all.sh
+```
+
+## 4. Configure targets
+
+Edit:
+
+```bash
+nano targets.txt
+```
+
+Add only IP addresses for which scanning authorization has been obtained.
+
+## 5. Run the scanner
+
+```bash
+./scan_all.sh
+```
+
+The generated results will be stored inside:
+
+```text
+scans/
+```
+
+---
+
+# 📦 Output Files
+
+For each scanned target, Nmap can generate:
+
+### `.nmap`
+
+Normal human-readable Nmap output.
+
+```text
+full-scan.nmap
+```
+
+### `.gnmap`
+
+Grepable output useful for automated processing.
+
+```text
+full-scan.gnmap
+```
+
+### `.xml`
+
+Structured XML output useful for tools and further processing.
+
+```text
+full-scan.xml
+```
+
+### `service-detection.txt`
+
+Contains service/version detection results where generated.
+
+---
 
 ---
 
@@ -239,33 +329,6 @@ This keeps the results organized and makes the original Nmap evidence available 
 
 ---
 
-# 📁 Project Structure
-
-```text
-open-port-scan/
-│
-├── 📄 README.md
-├── 📄 targets.txt
-├── 🐚 scan_all.sh
-│
-├── 📂 scans/
-│   │
-│   ├── 📂 <target-ip-1>/
-│   │   ├── full-scan.nmap
-│   │   ├── full-scan.gnmap
-│   │   ├── full-scan.xml
-│   │   └── service-detection.txt
-│   │
-│   ├── 📂 <target-ip-2>/
-│   │   └── ...
-│   │
-│   └── 📂 ...
-│
-└── 📂 reports/
-    ├── final-report.md
-    └── raw-results.txt
-```
-
 ### Directory Description
 
 * **`targets.txt`** — Contains authorized target IP addresses.
@@ -393,115 +456,6 @@ reports/final-report.md
 
 ---
 
-# 🚀 Installation
-
-## Prerequisites
-
-The project requires:
-
-* Ubuntu/Linux
-* Bash
-* Nmap
-* Git
-
-### Install Nmap
-
-```bash
-sudo apt update
-sudo apt install nmap -y
-```
-
-### Verify installation
-
-```bash
-nmap --version
-```
-
-### Verify Bash
-
-```bash
-bash --version
-```
-
----
-
-# ▶️ Usage
-
-## 1. Clone the repository
-
-```bash
-git clone <YOUR-GITHUB-REPOSITORY-URL>
-```
-
-## 2. Enter the project
-
-```bash
-cd open-port-scan
-```
-
-## 3. Make the script executable
-
-```bash
-chmod +x scan_all.sh
-```
-
-## 4. Configure targets
-
-Edit:
-
-```bash
-nano targets.txt
-```
-
-Add only IP addresses for which scanning authorization has been obtained.
-
-## 5. Run the scanner
-
-```bash
-./scan_all.sh
-```
-
-The generated results will be stored inside:
-
-```text
-scans/
-```
-
----
-
-# 📦 Output Files
-
-For each scanned target, Nmap can generate:
-
-### `.nmap`
-
-Normal human-readable Nmap output.
-
-```text
-full-scan.nmap
-```
-
-### `.gnmap`
-
-Grepable output useful for automated processing.
-
-```text
-full-scan.gnmap
-```
-
-### `.xml`
-
-Structured XML output useful for tools and further processing.
-
-```text
-full-scan.xml
-```
-
-### `service-detection.txt`
-
-Contains service/version detection results where generated.
-
----
 
 # 🔐 Security & Authorization
 
@@ -529,22 +483,7 @@ Port scanning should not be performed against random public systems without perm
 
 ---
 
-# 🔮 Future Improvements
 
-The project can be extended with:
-
-* 🔐 Automated vulnerability assessment
-* 🛡️ CVE/service-version correlation
-* 📊 Web-based monitoring dashboard
-* 📈 Historical scan comparison
-* 🔔 Automated security alerts
-* ⏰ Scheduled recurring scans
-* 🐳 Docker-based deployment
-* ☁️ Cloud-based scanning infrastructure
-* 📑 Automated PDF/HTML security reports
-* 🔗 Integration with security monitoring/SIEM platforms
-
----
 
 # 🎓 Learning Outcomes
 
