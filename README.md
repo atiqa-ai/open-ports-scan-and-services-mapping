@@ -1,4 +1,3 @@
-# open-ports-scan-and-services-mapping
 # 🔎 Open Port Scan and Service Mapping
 
 <p align="center">
@@ -10,40 +9,56 @@
 [![Nmap](https://img.shields.io/badge/Scanner-Nmap-blue)](https://nmap.org/)
 [![Git](https://img.shields.io/badge/Version%20Control-Git-F05032?logo=git)](https://git-scm.com/)
 [![GitHub](https://img.shields.io/badge/Repository-GitHub-black?logo=github)](https://github.com/)
-[![Status](https://img.shields.io/badge/Project-Completed-success)](#project-status)
+[![Status](https://img.shields.io/badge/Project-Completed-success)](#-project-status)
 
 </p>
 
 ---
 
-## 📌 Overview
+## 📌 Project Overview
 
-**Open Port Scan and Service Mapping** is a network security reconnaissance project that automatically scans authorized IP addresses to identify **open TCP ports and the services running on them**.
+**Open Port Scan and Service Mapping** is a network security reconnaissance project designed to identify **open TCP ports and the services running on authorized target systems**.
 
-The project uses **Nmap** for network scanning and **Bash** for automation. It performs a complete TCP port scan from **1–65535**, extracts open ports, and then performs service/version detection on the discovered ports.
+The project uses **Nmap** as the primary scanning tool and **Bash** to automate the scanning process across multiple IP addresses.
 
-All scan outputs are stored as raw Nmap evidence for analysis, verification, and reporting.
+The scanner performs a complete TCP port scan from **1–65535**, identifies open ports, and then performs **service and version detection** on the discovered ports.
+
+All scan results are preserved in raw Nmap formats for verification, analysis, and reporting.
 
 ---
 
-## 🎯 Objectives
+## 🎯 Project Objectives
+
+The main objectives of this project are:
 
 * 🔍 Identify open TCP ports on authorized systems.
-* 🛠️ Identify services running on discovered ports.
-* 🧩 Detect service/software versions where possible.
+* 🛠️ Discover services running on open ports.
+* 🧩 Detect service and software versions where possible.
 * ⚙️ Automate scanning of multiple IP addresses using Bash.
 * 📡 Perform full TCP port scanning from ports `1–65535`.
-* 📁 Store raw Nmap scan results for verification.
+* 📁 Preserve raw Nmap scan results.
 * 📊 Analyze network exposure and accessible services.
 * 📝 Generate a consolidated project report.
 
 ---
 
+## ✨ Key Features
 
+* **Full TCP Port Scanning** — Scans all ports from `1–65535`.
+* **Multi-Target Scanning** — Supports scanning multiple authorized IP addresses.
+* **Bash Automation** — Automates the complete scanning workflow.
+* **Open Port Detection** — Identifies accessible TCP ports.
+* **Service Detection** — Identifies services running on discovered ports.
+* **Version Detection** — Attempts to determine service/software versions.
+* **Structured Results** — Stores results separately for each target.
+* **Raw Evidence Preservation** — Maintains `.nmap`, `.gnmap`, and `.xml` outputs.
+* **Project Reporting** — Provides consolidated scan results and documentation.
 
-# 🏗️ Architecture
+---
 
-The project follows a simple automated reconnaissance architecture:
+# 🏗️ System Architecture
+
+The project follows a simple automated network reconnaissance architecture:
 
 ```text
                          ┌──────────────────────┐
@@ -65,8 +80,8 @@ The project follows a simple automated reconnaissance architecture:
                                     │
                                     ▼
                          ┌──────────────────────┐
-                         │    Open Port         │
-                         │    Identification    │
+                         │   Open Port          │
+                         │   Identification     │
                          └──────────┬───────────┘
                                     │
                                     ▼
@@ -75,160 +90,67 @@ The project follows a simple automated reconnaissance architecture:
                          │ Detection (-sV)      │
                          └──────────┬───────────┘
                                     │
-                                    ▼
-              ┌─────────────────────┴─────────────────────┐
-              │                                           │
-              ▼                                           ▼
-     ┌──────────────────┐                       ┌──────────────────┐
-     │   Raw Nmap Data  │                       │  Project Report  │
-     │ .nmap/.gnmap/XML │                       │   reports/       │
-     └──────────────────┘                       └──────────────────┘
-```
-
-
-# 🚀 Installation
-
-## Prerequisites
-
-The project requires:
-
-* Ubuntu/Linux
-* Bash
-* Nmap
-* Git
-
-### Install Nmap
-
-```bash
-sudo apt update
-sudo apt install nmap -y
-```
-
-### Verify installation
-
-```bash
-nmap --version
-```
-
-### Verify Bash
-
-```bash
-bash --version
+                         ┌──────────┴──────────┐
+                         │                     │
+                         ▼                     ▼
+                ┌──────────────────┐   ┌──────────────────┐
+                │   Raw Nmap Data  │   │  Project Reports │
+                │ .nmap/.gnmap/XML │   │     reports/     │
+                └──────────────────┘   └──────────────────┘
 ```
 
 ---
 
-# ▶️ Usage
+# 🔄 Project Workflow
 
-## 1. Clone the repository
-
-```bash
-git clone <YOUR-GITHUB-REPOSITORY-URL>
-```
-
-## 2. Enter the project
-
-```bash
-cd open-port-scan
-```
-
-## 3. Make the script executable
-
-```bash
-chmod +x scan_all.sh
-```
-
-## 4. Configure targets
-
-Edit:
-
-```bash
-nano targets.txt
-```
-
-Add only IP addresses for which scanning authorization has been obtained.
-
-## 5. Run the scanner
-
-```bash
-./scan_all.sh
-```
-
-The generated results will be stored inside:
+The complete scanning workflow is:
 
 ```text
-scans/
+┌──────────────────────────┐
+│ 1. Load Target IPs       │
+│    from targets.txt      │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│ 2. Validate Target IP    │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│ 3. Perform Full TCP Scan │
+│       Nmap -Pn -p-       │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│ 4. Identify Open Ports   │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│ 5. Extract Open Ports    │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│ 6. Service & Version     │
+│    Detection using -sV   │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│ 7. Save Raw Nmap Output  │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│ 8. Analyze Scan Results  │
+└────────────┬─────────────┘
+             ↓
+┌──────────────────────────┐
+│ 9. Generate Final Report │
+└──────────────────────────┘
 ```
 
 ---
 
-# 📦 Output Files
+# 🛠️ Technologies & Tools
 
-For each scanned target, Nmap can generate:
-
-### `.nmap`
-
-Normal human-readable Nmap output.
-
-```text
-full-scan.nmap
-```
-
-### `.gnmap`
-
-Grepable output useful for automated processing.
-
-```text
-full-scan.gnmap
-```
-
-### `.xml`
-
-Structured XML output useful for tools and further processing.
-
-```text
-full-scan.xml
-```
-
-### `service-detection.txt`
-
-Contains service/version detection results where generated.
-
----
-
----
-
-# 🔄 Workflow
-
-The complete scanning process follows these steps:
-
-```text
-1. Load authorized IP addresses
-             ↓
-2. Validate target IP
-             ↓
-3. Perform full TCP scan
-             ↓
-4. Scan ports 1–65535
-             ↓
-5. Identify open ports
-             ↓
-6. Extract open ports
-             ↓
-7. Perform service/version detection
-             ↓
-8. Save Nmap output
-             ↓
-9. Analyze results
-             ↓
-10. Generate final report
-```
-
----
-
-# 🛠️ Technologies
-
-| Technology            | Purpose                           |
+| Technology / Tool     | Purpose                           |
 | --------------------- | --------------------------------- |
 | 🐧 **Ubuntu / Linux** | Scanning environment              |
 | 🐚 **Bash**           | Automation and scripting          |
@@ -236,11 +158,11 @@ The complete scanning process follows these steps:
 | 🌐 **TCP/IP**         | Network communication             |
 | 📦 **Git**            | Version control                   |
 | 🐙 **GitHub**         | Repository and project management |
-| 📝 **Markdown**       | Documentation                     |
+| 📝 **Markdown**       | Project documentation             |
 
 ### Nmap Options Used
 
-| Option | Function                                         |
+| Option | Purpose                                          |
 | ------ | ------------------------------------------------ |
 | `-Pn`  | Skip host discovery and scan the target directly |
 | `-p-`  | Scan all TCP ports from `1–65535`                |
@@ -253,7 +175,7 @@ The complete scanning process follows these steps:
 
 # 🔬 Scanning Methodology
 
-## 1. Target Input
+## 1. Target Configuration
 
 Authorized target IP addresses are stored in:
 
@@ -261,7 +183,7 @@ Authorized target IP addresses are stored in:
 targets.txt
 ```
 
-Each target is placed on a separate line.
+Each IP address is placed on a separate line.
 
 Example:
 
@@ -273,46 +195,47 @@ Example:
 
 ---
 
-## 2. Full Port Scan
+## 2. Full TCP Port Scan
 
-The project performs a complete TCP port scan:
+The project scans the complete TCP port range:
 
 ```bash
 nmap -Pn -p- <TARGET_IP>
 ```
 
-This checks all TCP ports:
+The `-p-` option instructs Nmap to scan:
 
 ```text
 1 → 65535
 ```
 
-The purpose is to avoid missing services running on non-standard ports.
+This allows the project to identify services running on both standard and non-standard ports.
 
 ---
 
-## 3. Open Port Extraction
+## 3. Open Port Identification
 
-After the full scan, open TCP ports are extracted from the Nmap results.
+After the full scan, the discovered open TCP ports are extracted from the Nmap results.
 
-Only discovered open ports are passed to the service detection stage.
+Only the identified open ports are passed to the next stage.
 
 ---
 
-## 4. Service Detection
+## 4. Service & Version Detection
 
-Nmap then attempts to identify the service and version:
+Nmap performs service and version detection on the discovered open ports:
 
 ```bash
 nmap -Pn -sV -p <OPEN_PORTS> <TARGET_IP>
 ```
 
-Example output:
+Example:
 
 ```text
-22/tcp open ssh OpenSSH
-80/tcp open http
-443/tcp open https
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH
+80/tcp   open  http
+443/tcp  open  https
 ```
 
 ---
@@ -325,17 +248,136 @@ Each target receives its own directory under:
 scans/
 ```
 
-This keeps the results organized and makes the original Nmap evidence available for verification.
+This keeps scan results organized and preserves the original Nmap output for verification.
 
 ---
 
+# 📁 Project Structure
+
+```text
+open-port-scan/
+│
+├── 📄 README.md
+├── 📄 targets.txt
+├── 🐚 scan_all.sh
+│
+├── 📂 scans/
+│   │
+│   ├── 📂 64.23.130.208/
+│   │   ├── full-scan.nmap
+│   │   ├── full-scan.gnmap
+│   │   ├── full-scan.xml
+│   │   └── service-detection.txt
+│   │
+│   ├── 📂 157.230.47.60/
+│   │   └── ...
+│   │
+│   ├── 📂 159.223.62.168/
+│   │   └── ...
+│   │
+│   └── 📂 .../
+│
+└── 📂 reports/
+    ├── final-report.md
+    └── raw-results.txt
+```
+
 ### Directory Description
 
-* **`targets.txt`** — Contains authorized target IP addresses.
-* **`scan_all.sh`** — Main Bash automation script.
-* **`scans/`** — Contains raw Nmap scan results for each target.
-* **`reports/`** — Contains consolidated project reports and raw result documentation.
-* **`README.md`** — Project documentation.
+| File / Directory | Description                             |
+| ---------------- | --------------------------------------- |
+| `targets.txt`    | Contains authorized target IP addresses |
+| `scan_all.sh`    | Main Bash automation script             |
+| `scans/`         | Raw Nmap results organized by target    |
+| `reports/`       | Final and raw project reports           |
+| `README.md`      | Project documentation                   |
+
+---
+
+# 🚀 Installation
+
+## Prerequisites
+
+Before running the project, ensure the following are installed:
+
+* Ubuntu/Linux
+* Bash
+* Nmap
+* Git
+
+### 1. Update Package Repository
+
+```bash
+sudo apt update
+```
+
+### 2. Install Nmap
+
+```bash
+sudo apt install nmap -y
+```
+
+### 3. Verify Nmap
+
+```bash
+nmap --version
+```
+
+### 4. Verify Bash
+
+```bash
+bash --version
+```
+
+### 5. Verify Git
+
+```bash
+git --version
+```
+
+---
+
+# ▶️ Usage
+
+## 1. Clone the Repository
+
+```bash
+git clone <YOUR-GITHUB-REPOSITORY-URL>
+```
+
+## 2. Enter the Project Directory
+
+```bash
+cd open-port-scan
+```
+
+## 3. Make the Script Executable
+
+```bash
+chmod +x scan_all.sh
+```
+
+## 4. Configure Authorized Targets
+
+Open the target file:
+
+```bash
+nano targets.txt
+```
+
+Add one authorized IP address per line.
+
+## 5. Run the Scanner
+
+```bash
+./scan_all.sh
+```
+
+The generated scan results will be stored inside:
+
+```text
+scans/
+```
 
 ---
 
@@ -347,21 +389,21 @@ The project successfully scanned:
 
 ### Scan Configuration
 
-| Parameter         | Value               |
-| ----------------- | ------------------- |
-| Targets           | **15**              |
-| Protocol          | **TCP**             |
-| Port Range        | **1–65535**         |
-| Host Discovery    | Skipped using `-Pn` |
-| Service Detection | Enabled using `-sV` |
-| Automation        | Bash                |
-| Scanner           | Nmap                |
-| Result Formats    | Nmap / GNMAP / XML  |
-| Status            | ✅ Completed         |
+| Parameter         | Value                     |
+| ----------------- | ------------------------- |
+| Target IPs        | **15**                    |
+| Protocol          | **TCP**                   |
+| Port Range        | **1–65535**               |
+| Host Discovery    | Skipped using `-Pn`       |
+| Service Detection | Enabled using `-sV`       |
+| Automation        | Bash                      |
+| Scanner           | Nmap                      |
+| Output Formats    | `.nmap`, `.gnmap`, `.xml` |
+| Project Status    | ✅ Completed               |
 
-### Services Identified
+### Overall Findings
 
-The scans identified multiple types of services, including:
+The scans identified multiple types of network services, including:
 
 * SSH
 * HTTP
@@ -369,42 +411,87 @@ The scans identified multiple types of services, including:
 * DNS
 * Database-related services
 * Application/API services
-* Other services running on non-standard ports
+* Services operating on non-standard ports
 
-Most targets exposed SSH through **TCP/22**, while some targets exposed additional web, DNS, database, and application services.
+**TCP/22 (SSH)** was commonly identified across the scanned targets, while several targets exposed additional web, DNS, database, and application-related services.
 
-> The detailed raw results for every target are available inside the `scans/` directory.
+Detailed target-by-target results are preserved in the `scans/` directory.
 
 ---
 
-# 🔎 Example Result
+# 📄 Scan Output & Evidence
 
-A typical Nmap service-detection result looks like:
+The project preserves the original Nmap outputs generated during scanning.
+
+### `.nmap`
+
+Normal Nmap output containing detailed scan information.
 
 ```text
-PORT     STATE SERVICE VERSION
-22/tcp   open  ssh     OpenSSH
-80/tcp   open  http
-443/tcp  open  https
+full-scan.nmap
 ```
 
-The exact results obtained during the project are preserved in the raw scan files.
+### `.gnmap`
+
+Grepable Nmap output useful for automated processing and extraction.
+
+```text
+full-scan.gnmap
+```
+
+### `.xml`
+
+Structured Nmap output suitable for further processing and integration with other tools.
+
+```text
+full-scan.xml
+```
+
+### `service-detection.txt`
+
+Contains service and version detection results where generated.
+
+---
+
+## 📋 Project Reports
+
+The repository contains two main report files:
+
+### Final Report
+
+```text
+reports/final-report.md
+```
+
+Contains the consolidated project analysis and findings.
+
+### Raw Results
+
+```text
+reports/raw-results.txt
+```
+
+Contains the collected raw Nmap scan results.
 
 ---
 
 # 🖼️ Screenshots
 
-Screenshots can be added here to demonstrate the actual execution and results.
+Screenshots provide visual evidence of the project execution and results.
 
-### Nmap Scan Execution
-
-Place your screenshot inside:
+Store screenshots inside:
 
 ```text
 screenshots/
 ```
 
-Then add:
+### Nmap Installation
+
+```markdown
+![Nmap Installation on Ubuntu](screenshots/nmap-installation.png)
+```
+
+### Nmap Scan Execution
 
 ```markdown
 ![Nmap Scan Execution](screenshots/nmap-scan.png)
@@ -416,59 +503,30 @@ Then add:
 ![Nmap Scan Results](screenshots/nmap-results.png)
 ```
 
-### Project Report
+### Final Project Report
 
 ```markdown
-![Project Report](screenshots/final-report.png)
+![Final Project Report](screenshots/final-report.png)
 ```
 
-> Replace the filenames above with the actual screenshot filenames in your repository.
+> Replace the filenames above with the actual screenshot filenames available in the repository.
 
 ---
-
-# 📄 Raw Scan Evidence
-
-The project preserves the original Nmap scan outputs.
-
-### Available formats
-
-```text
-.nmap
-.gnmap
-.xml
-```
-
-### Why these files are included
-
-These files provide evidence of the actual scanning process and allow the results to be independently reviewed.
-
-The consolidated raw results are also available at:
-
-```text
-reports/raw-results.txt
-```
-
-The final analysis/report is available at:
-
-```text
-reports/final-report.md
-```
-
----
-
 
 # 🔐 Security & Authorization
 
-This project is designed for **authorized network reconnaissance**.
+This project is intended for **authorized network reconnaissance and academic security testing**.
 
-The scanning process should only be performed against:
+Scanning should only be performed against systems where explicit authorization has been obtained.
+
+Authorized environments may include:
 
 * Systems owned by the tester
-* University/lab infrastructure with permission
-* Cloud servers explicitly authorized for testing
-* Other systems where explicit authorization has been obtained
+* University/lab infrastructure
+* Authorized cloud servers
+* Systems explicitly provided for security testing
 
-Port scanning should not be performed against random public systems without permission.
+> **An open port does not automatically indicate a vulnerability.** This project focuses on identifying network-accessible services and mapping the exposed attack surface.
 
 ---
 
@@ -476,10 +534,11 @@ Port scanning should not be performed against random public systems without perm
 
 * Nmap may not identify every service correctly.
 * Custom or uncommon services may appear as `unknown`.
-* Firewalls can cause ports to appear as `filtered`.
+* Firewalls may cause ports to appear as `filtered`.
 * Service/version detection depends on the responses provided by the target.
-* An open port does **not** automatically indicate a vulnerability.
-* Results represent the network state at the time of scanning.
+* An open port alone does not confirm a security vulnerability.
+* Scan results represent the state of the targets at the time of scanning.
+* Network conditions can affect scan duration and accuracy.
 
 ---
 
@@ -497,9 +556,9 @@ This project provided practical experience in:
 * Linux networking
 * Automation
 * Network exposure analysis
+* Raw scan result processing
 * Security documentation
-* Git
-* GitHub
+* Git and GitHub
 * Technical reporting
 
 ---
@@ -508,35 +567,42 @@ This project provided practical experience in:
 
 | Component                | Status      |
 | ------------------------ | ----------- |
-| Target configuration     | ✅ Completed |
-| Full TCP scanning        | ✅ Completed |
-| Open port identification | ✅ Completed |
-| Service detection        | ✅ Completed |
-| Result collection        | ✅ Completed |
-| Raw scan preservation    | ✅ Completed |
-| Final report             | ✅ Completed |
-| GitHub repository        | ✅ Completed |
+| Target Configuration     | ✅ Completed |
+| Full TCP Port Scanning   | ✅ Completed |
+| Open Port Identification | ✅ Completed |
+| Service Detection        | ✅ Completed |
+| Version Detection        | ✅ Completed |
+| Result Collection        | ✅ Completed |
+| Raw Scan Preservation    | ✅ Completed |
+| Final Report             | ✅ Completed |
+| GitHub Repository        | ✅ Completed |
 
-### 🟢 Status: Completed
+## 🟢 Project Status: Completed
 
 ---
 
 # 👨‍💻 Project Information
 
-**Project:** Open Port Scan and Service Mapping
-
-**Category:** Network Security / Network Reconnaissance
-
-**Primary Tool:** Nmap
-
-**Automation:** Bash
-
-**Operating System:** Ubuntu / Linux
-
-**Targets:** 15 Authorized IP Addresses
-
-**Repository:** GitHub
+| Information          | Details                                   |
+| -------------------- | ----------------------------------------- |
+| **Project Name**     | Open Port Scan and Service Mapping        |
+| **Category**         | Network Security / Network Reconnaissance |
+| **Primary Tool**     | Nmap                                      |
+| **Automation**       | Bash                                      |
+| **Operating System** | Ubuntu / Linux                            |
+| **Targets**          | 15 Authorized IP Addresses                |
+| **Repository**       | GitHub                                    |
+| **Status**           | Completed                                 |
 
 ---
+
+
+
+
+<p align="center">
+
+**Built for Network Visibility, Service Discovery & Authorized Security Testing**
+
+</p>
 
 
