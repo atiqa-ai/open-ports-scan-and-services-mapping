@@ -1,0 +1,16 @@
+# Nmap 7.98 scan initiated Sun Sep  6 21:48:36 2026 as: nmap -Pn -p- -oA scans/139.59.117.80/full-tcp 139.59.117.80
+Nmap scan report for 139.59.117.80
+Host is up (0.32s latency).
+Not shown: 65526 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+53/tcp   open  domain
+80/tcp   open  http
+443/tcp  open  https
+7212/tcp open  unknown
+7213/tcp open  unknown
+9111/tcp open  DragonIDSConsole
+9112/tcp open  unknown
+9180/tcp open  unknown
+
+# Nmap done at Sun Sep  6 22:17:32 2026 -- 1 IP address (1 host up) scanned in 1735.94 seconds

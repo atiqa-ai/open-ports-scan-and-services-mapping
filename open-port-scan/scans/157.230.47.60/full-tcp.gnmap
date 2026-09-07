@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Sun Sep  6 21:13:48 2026 as: nmap -Pn -p- -oA scans/157.230.47.60/full-tcp 157.230.47.60
+Host: 157.230.47.60 ()	Status: Up
+Host: 157.230.47.60 ()	Ports: 22/open/tcp//ssh///, 53/open/tcp//domain///, 4646/open/tcp//dots-signal///, 8301/open/tcp//amberon///, 8500/open/tcp//fmtp///, 8502/open/tcp//ftnmtp///, 8503/open/tcp//lsp-self-ping///, 8600/open/tcp//asterix///, 9000/open/tcp//cslistener///, 9001/open/tcp//tor-orport///, 23581/closed/tcp/////, 29540/closed/tcp/////	Ignored State: filtered (65523)
+# Nmap done at Sun Sep  6 21:54:50 2026 -- 1 IP address (1 host up) scanned in 2462.44 seconds

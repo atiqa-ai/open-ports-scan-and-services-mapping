@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Sun Sep  6 21:13:48 2026 as: nmap -Pn -p- -oA scans/157.230.47.60/full-tcp 157.230.47.60 -->
+<nmaprun scanner="nmap" args="nmap -Pn -p- -oA scans/157.230.47.60/full-tcp 157.230.47.60" start="1788729228" startstr="Sun Sep  6 21:13:48 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1788729228" endtime="1788731690"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="157.230.47.60" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65523">
+<extrareasons reason="no-response" count="65523" proto="tcp" ports="1-21,23-52,54-4645,4647-8300,8302-8499,8501,8504-8599,8601-8999,9002-23580,23582-29539,29541-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4646"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="dots-signal" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8301"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="amberon" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8500"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="fmtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8502"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftnmtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8503"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="lsp-self-ping" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8600"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="asterix" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="cslistener" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9001"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tor-orport" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23581"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+<port protocol="tcp" portid="29540"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+</ports>
+<times srtt="247934" rttvar="31469" to="373810"/>
+</host>
+<runstats><finished time="1788731690" timestr="Sun Sep  6 21:54:50 2026" summary="Nmap done at Sun Sep  6 21:54:50 2026; 1 IP address (1 host up) scanned in 2462.44 seconds" elapsed="2462.44" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

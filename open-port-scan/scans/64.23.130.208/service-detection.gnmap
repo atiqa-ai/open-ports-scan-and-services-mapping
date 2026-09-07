@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Sun Sep  6 21:55:00 2026 as: nmap -Pn -sV -p 22,54321 -oA scans/64.23.130.208/service-detection 64.23.130.208
+Host: 64.23.130.208 ()	Status: Up
+Host: 64.23.130.208 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.9p1 Ubuntu 3ubuntu0.17 (Ubuntu Linux; protocol 2.0)/, 54321/open/tcp//mysql//MariaDB 5.5.5-10.6.23/
+# Nmap done at Sun Sep  6 21:55:02 2026 -- 1 IP address (1 host up) scanned in 2.20 seconds

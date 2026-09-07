@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Sun Sep  6 21:48:36 2026 as: nmap -Pn -p- -oA scans/139.59.117.80/full-tcp 139.59.117.80
+Host: 139.59.117.80 ()	Status: Up
+Host: 139.59.117.80 ()	Ports: 22/open/tcp//ssh///, 53/open/tcp//domain///, 80/open/tcp//http///, 443/open/tcp//https///, 7212/open/tcp/////, 7213/open/tcp/////, 9111/open/tcp//DragonIDSConsole///, 9112/open/tcp/////, 9180/open/tcp/////	Ignored State: filtered (65526)
+# Nmap done at Sun Sep  6 22:17:32 2026 -- 1 IP address (1 host up) scanned in 1735.94 seconds

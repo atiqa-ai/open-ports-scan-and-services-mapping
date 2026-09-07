@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Sun Sep  6 21:55:00 2026 as: nmap -Pn -sV -p 22,54321 -oA scans/64.23.130.208/service-detection 64.23.130.208 -->
+<nmaprun scanner="nmap" args="nmap -Pn -sV -p 22,54321 -oA scans/64.23.130.208/service-detection 64.23.130.208" start="1788731700" startstr="Sun Sep  6 21:55:00 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="22,54321"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1788731701" endtime="1788731702"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="64.23.130.208" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.9p1 Ubuntu 3ubuntu0.17" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="54321"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" product="MariaDB" version="5.5.5-10.6.23" method="probed" conf="10"><cpe>cpe:/a:mariadb:mariadb:5.5.5-10.6.23</cpe></service></port>
+</ports>
+<times srtt="437896" rttvar="328531" to="1752020"/>
+</host>
+<runstats><finished time="1788731702" timestr="Sun Sep  6 21:55:02 2026" summary="Nmap done at Sun Sep  6 21:55:02 2026; 1 IP address (1 host up) scanned in 2.20 seconds" elapsed="2.20" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Sun Sep  6 21:54:50 2026 as: nmap -Pn -sV -p 22,53,4646,8301,8500,8502,8503,8600,9000,9001 -oA scans/157.230.47.60/service-detection 157.230.47.60
+Host: 157.230.47.60 ()	Status: Up
+Host: 157.230.47.60 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.9p1 Ubuntu 3ubuntu0.14 (Ubuntu Linux; protocol 2.0)/, 53/open/tcp//tcpwrapped///, 4646/open/tcp//http//Golang net|http server/, 8301/open/tcp//amberon?///, 8500/open/tcp//http//Golang net|http server/, 8502/open/tcp//ftnmtp?///, 8503/open/tcp//ssl|lsp-self-ping?///, 8600/open/tcp//tcpwrapped///, 9000/open/tcp//ssl|http//Golang net|http server/, 9001/open/tcp//ssl|http//Golang net|http server/
+# Nmap done at Sun Sep  6 21:55:57 2026 -- 1 IP address (1 host up) scanned in 66.89 seconds

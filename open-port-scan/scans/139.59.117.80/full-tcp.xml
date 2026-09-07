@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Sun Sep  6 21:48:36 2026 as: nmap -Pn -p- -oA scans/139.59.117.80/full-tcp 139.59.117.80 -->
+<nmaprun scanner="nmap" args="nmap -Pn -p- -oA scans/139.59.117.80/full-tcp 139.59.117.80" start="1788731316" startstr="Sun Sep  6 21:48:36 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1788731317" endtime="1788733052"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="139.59.117.80" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65526">
+<extrareasons reason="no-response" count="65526" proto="tcp" ports="1-21,23-52,54-79,81-442,444-7211,7214-9110,9113-9179,9181-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7212"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="7213"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="9111"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="DragonIDSConsole" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9112"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="9180"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+</ports>
+<times srtt="318249" rttvar="125222" to="819137"/>
+</host>
+<runstats><finished time="1788733052" timestr="Sun Sep  6 22:17:32 2026" summary="Nmap done at Sun Sep  6 22:17:32 2026; 1 IP address (1 host up) scanned in 1735.94 seconds" elapsed="1735.94" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

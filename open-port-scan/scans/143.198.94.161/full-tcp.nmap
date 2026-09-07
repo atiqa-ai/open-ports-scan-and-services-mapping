@@ -1,0 +1,8 @@
+# Nmap 7.98 scan initiated Sun Sep  6 21:37:33 2026 as: nmap -Pn -p- -oA scans/143.198.94.161/full-tcp 143.198.94.161
+Nmap scan report for 143.198.94.161
+Host is up (0.19s latency).
+Not shown: 65534 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+# Nmap done at Sun Sep  6 21:55:39 2026 -- 1 IP address (1 host up) scanned in 1085.85 seconds

@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Sun Sep  6 21:55:39 2026 as: nmap -Pn -sV -p 22 -oA scans/143.198.94.161/service-detection 143.198.94.161
+Host: 143.198.94.161 ()	Status: Up
+Host: 143.198.94.161 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.9p1 Ubuntu 3ubuntu0.17 (Ubuntu Linux; protocol 2.0)/
+# Nmap done at Sun Sep  6 21:55:42 2026 -- 1 IP address (1 host up) scanned in 2.23 seconds

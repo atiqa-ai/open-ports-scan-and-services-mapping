@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Sun Sep  6 21:53:56 2026 as: nmap -Pn -sV -p 22,53,80,443,7212,7213,9111,9112,9180 -oA scans/188.166.250.175/service-detection 188.166.250.175
+Host: 188.166.250.175 ()	Status: Up
+Host: 188.166.250.175 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.9p1 Ubuntu 3ubuntu0.17 (Ubuntu Linux; protocol 2.0)/, 53/open/tcp//tcpwrapped///, 80/open/tcp//http//OpenResty web app server/, 443/open/tcp//ssl|https//openresty/, 7212/open/tcp//postgresql//PostgreSQL DB 9.6.0 or later/, 7213/open/tcp/////, 9111/open/tcp//redis//Redis key-value store/, 9112/open/tcp//http//Golang net|http server/, 9180/open/tcp//http//OpenResty web app server/
+# Nmap done at Sun Sep  6 21:55:06 2026 -- 1 IP address (1 host up) scanned in 70.18 seconds

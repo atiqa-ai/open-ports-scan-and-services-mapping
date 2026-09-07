@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Sun Sep  6 22:30:53 2026 as: nmap -Pn -sV -p 22,80,443,8443 -oA scans/139.59.113.219/service-detection 139.59.113.219
+Host: 139.59.113.219 ()	Status: Up
+Host: 139.59.113.219 ()	Ports: 22/open/tcp//ssh//OpenSSH 9.6p1 Ubuntu 3ubuntu13.19 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.31.2/, 443/open/tcp//ssl|http//nginx 1.31.2/, 8443/open/tcp//https-alt?///
+# Nmap done at Sun Sep  6 22:31:53 2026 -- 1 IP address (1 host up) scanned in 59.60 seconds

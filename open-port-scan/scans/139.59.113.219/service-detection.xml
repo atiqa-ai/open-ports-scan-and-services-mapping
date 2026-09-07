@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Sun Sep  6 22:30:53 2026 as: nmap -Pn -sV -p 22,80,443,8443 -oA scans/139.59.113.219/service-detection 139.59.113.219 -->
+<nmaprun scanner="nmap" args="nmap -Pn -sV -p 22,80,443,8443 -oA scans/139.59.113.219/service-detection 139.59.113.219" start="1788733853" startstr="Sun Sep  6 22:30:53 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="4" services="22,80,443,8443"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1788733855" endtime="1788733913"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="139.59.113.219" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="9.6p1 Ubuntu 3ubuntu13.19" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:9.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.31.2" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.31.2</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.31.2" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.31.2</cpe></service></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<times srtt="362999" rttvar="153460" to="976839"/>
+</host>
+<runstats><finished time="1788733913" timestr="Sun Sep  6 22:31:53 2026" summary="Nmap done at Sun Sep  6 22:31:53 2026; 1 IP address (1 host up) scanned in 59.60 seconds" elapsed="59.60" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

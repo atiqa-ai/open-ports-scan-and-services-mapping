@@ -1,0 +1,19 @@
+# Nmap 7.98 scan initiated Sun Sep  6 21:13:48 2026 as: nmap -Pn -p- -oA scans/157.230.47.60/full-tcp 157.230.47.60
+Nmap scan report for 157.230.47.60
+Host is up (0.25s latency).
+Not shown: 65523 filtered tcp ports (no-response)
+PORT      STATE  SERVICE
+22/tcp    open   ssh
+53/tcp    open   domain
+4646/tcp  open   dots-signal
+8301/tcp  open   amberon
+8500/tcp  open   fmtp
+8502/tcp  open   ftnmtp
+8503/tcp  open   lsp-self-ping
+8600/tcp  open   asterix
+9000/tcp  open   cslistener
+9001/tcp  open   tor-orport
+23581/tcp closed unknown
+29540/tcp closed unknown
+
+# Nmap done at Sun Sep  6 21:54:50 2026 -- 1 IP address (1 host up) scanned in 2462.44 seconds

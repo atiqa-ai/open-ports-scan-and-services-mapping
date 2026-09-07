@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Sun Sep  6 21:13:48 2026 as: nmap -Pn -p- -oA scans/159.223.62.168/full-tcp 159.223.62.168
+Host: 159.223.62.168 ()	Status: Up
+Host: 159.223.62.168 ()	Ports: 22/open/tcp//ssh///	Ignored State: filtered (65534)
+# Nmap done at Sun Sep  6 21:37:31 2026 -- 1 IP address (1 host up) scanned in 1423.28 seconds

@@ -1,0 +1,10 @@
+# Nmap 7.98 scan initiated Sun Sep  6 22:25:05 2026 as: nmap -Pn -sV -p 22 -oA scans/167.172.66.204/service-detection 167.172.66.204
+Nmap scan report for 167.172.66.204
+Host is up (0.25s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.17 (Ubuntu Linux; protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Sep  6 22:25:09 2026 -- 1 IP address (1 host up) scanned in 5.00 seconds

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Sun Sep  6 21:13:48 2026 as: nmap -Pn -p- -oA scans/139.59.245.244/full-tcp 139.59.245.244 -->
+<nmaprun scanner="nmap" args="nmap -Pn -p- -oA scans/139.59.245.244/full-tcp 139.59.245.244" start="1788729228" startstr="Sun Sep  6 21:13:48 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1788729228" endtime="1788730650"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="139.59.245.244" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-response" count="65534" proto="tcp" ports="1-21,23-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+</ports>
+<times srtt="287706" rttvar="78412" to="601354"/>
+</host>
+<runstats><finished time="1788730650" timestr="Sun Sep  6 21:37:30 2026" summary="Nmap done at Sun Sep  6 21:37:30 2026; 1 IP address (1 host up) scanned in 1422.50 seconds" elapsed="1422.50" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

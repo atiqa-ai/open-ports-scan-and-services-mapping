@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Sun Sep  6 21:55:39 2026 as: nmap -Pn -sV -p 22 -oA scans/143.198.94.161/service-detection 143.198.94.161 -->
+<nmaprun scanner="nmap" args="nmap -Pn -sV -p 22 -oA scans/143.198.94.161/service-detection 143.198.94.161" start="1788731739" startstr="Sun Sep  6 21:55:39 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="22"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1788731741" endtime="1788731742"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="143.198.94.161" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.9p1 Ubuntu 3ubuntu0.17" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+</ports>
+<times srtt="270390" rttvar="270390" to="1351950"/>
+</host>
+<runstats><finished time="1788731742" timestr="Sun Sep  6 21:55:42 2026" summary="Nmap done at Sun Sep  6 21:55:42 2026; 1 IP address (1 host up) scanned in 2.23 seconds" elapsed="2.23" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
