@@ -503,6 +503,8 @@ screenshots/
 
 <img width="442" height="341" alt="Screenshot 2026-09-07 222917" src="https://github.com/user-attachments/assets/387387ef-4294-488a-bac4-07c4de8030a9" />
 
+<img width="443" height="259" alt="image" src="https://github.com/user-attachments/assets/e4a4a9e4-78a0-450b-90dc-551bf8f8040b" />
+
 
 
 
