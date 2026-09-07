@@ -345,7 +345,7 @@ git --version
 ## 1. Clone the Repository
 
 ```bash
-git clone <YOUR-GITHUB-REPOSITORY-URL>
+git clone https://github.com/atiqa-ai/open-ports-scan-and-services-mapping/
 ```
 
 ## 2. Enter the Project Directory
