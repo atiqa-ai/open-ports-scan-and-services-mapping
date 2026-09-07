@@ -10,6 +10,7 @@
 [![Git](https://img.shields.io/badge/Version%20Control-Git-F05032?logo=git)](https://git-scm.com/)
 [![GitHub](https://img.shields.io/badge/Repository-GitHub-black?logo=github)](https://github.com/)
 
+
 </p>
 
 ---
@@ -55,12 +56,11 @@ The main objectives of this project are:
 
 ---
 
-
-## 🏗️ System Architecture
+# 🏗️ System Architecture
 
 The project follows a simple automated network reconnaissance architecture:
 
-<pre align="center">
+```text
                          ┌──────────────────────┐
                          │  Authorized Targets  │
                          │      targets.txt     │
@@ -97,8 +97,54 @@ The project follows a simple automated network reconnaissance architecture:
                 │   Raw Nmap Data  │   │  Project Reports │
                 │ .nmap/.gnmap/XML │   │     reports/     │
                 └──────────────────┘   └──────────────────┘
-</pre>
+```
 
+---
+
+# 🔄 Project Workflow
+
+The complete scanning workflow is:
+
+```text
+           ┌──────────────────────────┐
+           │ 1. Load Target IPs       │
+           │    from targets.txt      │
+           └────────────┬─────────────┘
+                        ↓
+           ┌──────────────────────────┐
+           │ 2. Validate Target IP    │
+           └────────────┬─────────────┘
+                        ↓
+           ┌──────────────────────────┐
+           │ 3. Perform Full TCP Scan │
+           │       Nmap -Pn -p-       │
+           └────────────┬─────────────┘
+                        ↓
+           ┌──────────────────────────┐
+           │ 4. Identify Open Ports   │
+           └────────────┬─────────────┘
+                        ↓
+           ┌──────────────────────────┐
+           │ 5. Extract Open Ports    │
+           └────────────┬─────────────┘
+                        ↓
+           ┌──────────────────────────┐
+           │ 6. Service & Version     │
+           │    Detection using -sV   │
+           └────────────┬─────────────┘
+                        ↓
+           ┌──────────────────────────┐
+           │ 7. Save Raw Nmap Output  │
+           └────────────┬─────────────┘
+                        ↓
+           ┌──────────────────────────┐
+           │ 8. Analyze Scan Results  │
+           └────────────┬─────────────┘
+                        ↓
+           ┌──────────────────────────┐
+           │ 9. Generate Final Report │
+           └──────────────────────────┘
+```
 
 ---
 
@@ -154,9 +200,10 @@ Example:
 The project scans the complete TCP port range:
 
 ```bash
+
 nmap -Pn -p- <TARGET_IP>
 
-nmap -Pn -p- 192.0.2.30
+nmap -Pn -p- 192.68.38.99
 ```
 
 The `-p-` option instructs Nmap to scan:
@@ -431,7 +478,11 @@ Contains the collected raw Nmap scan results.
 
 ---
 
+# 🖼️ Screenshots
 
+Screenshots provide visual evidence of the project execution and results.
+
+Store screenshots inside:
 
 ```text
 screenshots/
@@ -456,8 +507,6 @@ screenshots/
 ```
 
 
-
----
 
 # 🔐 Security & Authorization
 
@@ -488,9 +537,6 @@ Authorized environments may include:
 
 ---
 
-
-
----
 
 # 🎓 Learning Outcomes
 
@@ -527,9 +573,5 @@ This project provided practical experience in:
 
 ---
 
-
-<p align="center">
-
-**Built for Network Visibility, Service Discovery & Authorized Security Testing**
 
 </p>
