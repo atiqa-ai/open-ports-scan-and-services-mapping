@@ -488,30 +488,25 @@ screenshots/
 ### Nmap Installation
 
 ```markdown
-![Nmap Installation on Ubuntu](screenshots/nmap-installation.png)
+<img width="435" height="311" alt="Screenshot 2026-09-05 203159" src="https://github.com/user-attachments/assets/fd873392-5b4e-4936-9b15-077f66c28d8b" />
+
 ```
 
 ### Nmap Scan Execution
 
 ```markdown
-![Nmap Scan Execution](screenshots/nmap-scan.png)
+<img width="443" height="340" alt="image" src="https://github.com/user-attachments/assets/7690f030-e1d0-4ddf-8a14-ffbb7ff040bd" />
+
+
 ```
 
 ### Scan Results
 
 ```markdown
-![Nmap Scan Results](screenshots/nmap-results.png)
+<img width="442" height="341" alt="image" src="https://github.com/user-attachments/assets/ab72b98e-a0de-48ab-952b-86686cbea069" />
+
 ```
 
-### Final Project Report
-
-```markdown
-![Final Project Report](screenshots/final-report.png)
-```
-
-> Replace the filenames above with the actual screenshot filenames available in the repository.
-
----
 
 # 🔐 Security & Authorization
 
