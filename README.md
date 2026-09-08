@@ -254,35 +254,6 @@ This keeps scan results organized and preserves the original Nmap output for ver
 
 ---
 
-# 📁 Project Structure
-
-```text
-open-port-scan/
-│
-├── 📄 README.md
-├── 📄 targets.txt
-├── 🐚 scan_all.sh
-│
-├── 📂 scans/
-│   │
-│   ├── 📂 64.23.130.208/
-│   │   ├── full-scan.nmap
-│   │   ├── full-scan.gnmap
-│   │   ├── full-scan.xml
-│   │   └── service-detection.txt
-│   │
-│   ├── 📂 157.230.47.60/
-│   │   └── ...
-│   │
-│   ├── 📂 159.223.62.168/
-│   │   └── ...
-│   │
-│   └── 📂 .../
-│
-└── 📂 reports/
-    ├── final-report.md
-    └── raw-results.txt
-```
 
 ### Directory Description
 
