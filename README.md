@@ -104,46 +104,8 @@ The project follows a simple automated network reconnaissance architecture:
 
 The complete scanning workflow is:
 
-```text
-           ┌──────────────────────────┐
-           │ 1. Load Target IPs       │
-           │    from targets.txt      │
-           └────────────┬─────────────┘
-                        ↓
-           ┌──────────────────────────┐
-           │ 2. Validate Target IP    │
-           └────────────┬─────────────┘
-                        ↓
-           ┌──────────────────────────┐
-           │ 3. Perform Full TCP Scan │
-           │       Nmap -Pn -p-       │
-           └────────────┬─────────────┘
-                        ↓
-           ┌──────────────────────────┐
-           │ 4. Identify Open Ports   │
-           └────────────┬─────────────┘
-                        ↓
-           ┌──────────────────────────┐
-           │ 5. Extract Open Ports    │
-           └────────────┬─────────────┘
-                        ↓
-           ┌──────────────────────────┐
-           │ 6. Service & Version     │
-           │    Detection using -sV   │
-           └────────────┬─────────────┘
-                        ↓
-           ┌──────────────────────────┐
-           │ 7. Save Raw Nmap Output  │
-           └────────────┬─────────────┘
-                        ↓
-           ┌──────────────────────────┐
-           │ 8. Analyze Scan Results  │
-           └────────────┬─────────────┘
-                        ↓
-           ┌──────────────────────────┐
-           │ 9. Generate Final Report │
-           └──────────────────────────┘
-```
+<img width="1024" height="1536" alt="ChatGPT Image Sep 9, 2026, 11_02_40 PM" src="https://github.com/user-attachments/assets/add0fdc7-4232-4901-acd6-83154da46952" />
+
 
 ---
 
