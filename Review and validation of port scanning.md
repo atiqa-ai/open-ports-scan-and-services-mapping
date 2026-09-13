@@ -85,16 +85,6 @@ Ports **53/tcp** and **8600/tcp** were reported as `tcpwrapped`; they were retai
 
 > **Note:** Unidentified services represent service-fingerprinting limitations and do not indicate missing open ports.
 
-## Final Assessment
-
-| Area                    | Status                 |
-| ----------------------- | ---------------------- |
-| Target coverage         | ✅ **15/15 — Passed**   |
-| Open-port accuracy      | ✅ **Passed**           |
-| Discovery vs. detection | ✅ **No discrepancies** |
-| Service identification  | ✅ **Mostly confirmed** |
-| Unidentified services   | ⚠️ **Documented**      |
-| Missing open TCP ports  | ✅ **None identified**  |
 
 ### Final Status
 
