@@ -149,9 +149,9 @@ Each IP address is placed on a separate line.
 Example:
 
 ```text
-192.0.2.10
-192.0.2.20
-192.0.2.30
+192.x.x.x
+192.x.x.x
+192.x.x.x
 ```
 
 ---
@@ -164,7 +164,7 @@ The project scans the complete TCP port range:
 
 nmap -Pn -p- <TARGET_IP>
 
-nmap -Pn -p- 192.68.38.99
+nmap -Pn -p- 192.x.x.x
 ```
 
 The `-p-` option instructs Nmap to scan:
@@ -326,7 +326,7 @@ The project successfully scanned:
 
 | Parameter         | Value                     |
 | ----------------- | ------------------------- |
-| Target IPs        | **15**                    |
+| Target IPs        | **Multiple Ips**                    |
 | Protocol          | **TCP**                   |
 | Port Range        | **1–65535**               |
 | Host Discovery    | Skipped using `-Pn`       |
