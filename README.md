@@ -422,7 +422,7 @@ Contains the collected raw Nmap scan results.
 ### Nmap Scan Execution
 
 
-<img width="443" height="340" alt="Screenshot 2026-09-07 223149" src="https://github.com/user-attachments/assets/066d1eaf-08cb-43f7-8283-caad33a04982" />
+<img width="900" height="640" alt="image" src="https://github.com/user-attachments/assets/750981c9-7d8f-48f9-a2c4-940f57a917dc" />
 
 
 
