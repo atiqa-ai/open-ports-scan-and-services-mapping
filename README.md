@@ -429,10 +429,10 @@ Contains the collected raw Nmap scan results.
 ### Scan Results
 
 
-<img width="883" height="681" alt="image" src="https://github.com/user-attachments/assets/26dc285b-9185-4058-b074-b5f86a81fdb0" />
+<img width="720" height="820" alt="e78t2" src="https://github.com/user-attachments/assets/d884de69-8c77-4a73-8a41-bbb794bdd669" />
 
 
-<img width="886" height="517" alt="image" src="https://github.com/user-attachments/assets/5b239b5e-e397-4340-85b3-ec8dd4b2f97b" />
+<img width="940" height="600" alt="image" src="https://github.com/user-attachments/assets/a93ad255-2b67-4a81-9244-54390c32d8fb" />
 
 
 
